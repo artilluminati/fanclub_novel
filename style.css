@@ -87,7 +87,7 @@ body {
 
 /* Анимация появления и исчезания персонажей */
 .character {
-    animation: fadeIn 1s ease forwards;
+    /* animation: fadeIn 1s ease forwards; */
 }
 
 .character.hide {
