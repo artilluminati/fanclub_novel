@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кулачки 6,1488</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="root">
+        <!-- Основное окно с фоном -->
+        <div id="main" class="bg">
+            <!-- Блок с текущей игрой -->
+            <div id="currentGame" onclick="nextStep()">
+                <!-- Персонажи -->
+                <div id="title"></div>
+                <div id="characters"></div>
+                
+            </div>
+            <div id="dialogue">
+                <span id="speakerName"></span>
+                <p id="text"></p>
+                <div class="buttons">
+                    <button id="saveBtn" onclick="saveGame()">Сохранить</button>
+                    <button id="loadBtn" onclick="loadGame()">Загрузить</button>
+                    <button id="prevBtn" onclick="prevStep()">Назад</button>
+                    <button id="nextBtn" onclick="nextStep()">Вперед</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

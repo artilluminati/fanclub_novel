@@ -1,0 +1,127 @@
+/* Общие стили для страницы */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#root {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+    background-position: center!important;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.bg {
+    background-color: #f0f0f0; /* Цвет фона, можно заменить на изображение */
+}
+
+#saveSlots {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#currentGame {
+    position: absolute;
+    color: white;
+    max-width: 100vw;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+#title {
+    font-size: 50px;
+    color: black;
+    width: 80%;
+    height: 100px;
+    text-align: center;
+    font-weight: 700;
+}
+#characters {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+#characters img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+}
+
+#dialogue {
+    background: #182533;
+    color: white;
+    padding: 20px;
+    position: absolute;
+    bottom: 10px;
+    margin: 20px;
+    max-width: calc(100vw - 90px);
+    width: 100%;
+    border-radius: 20px;
+    overflow-x: hidden;
+}
+
+#speakerName {
+    font-weight: bold;
+    color: #3fbae3;
+}
+
+/* Анимация появления и исчезания персонажей */
+.character {
+    animation: fadeIn 1s ease forwards;
+}
+
+.character.hide {
+    animation: fadeOut 1s ease forwards;
+}
+
+button {
+    background-color: #3fbae3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
